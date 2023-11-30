@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Pragati Narrow';
+  src: url(/public/fonts/PragatiNarrow-Regular.ttf) format('​truetype​') or ttf;
+}
+
+@font-face {
+  font-family: 'Dragon Slayer';
+  src: url(/public/fonts/DragonSlayer.ttf) format('​truetype​') or ttf;
+}

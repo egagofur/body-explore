@@ -9,12 +9,24 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        bodyExplore: "url('/bg.png')",
       },
+    },
+    fontFamily: {
+      dragonSlayer: ['Dragon Slayer', 'sans-serif'],
+      pragatiNarrow: ['Pragati Narrow', 'sans-serif'],
+    },
+    colors: {
+      primary: '#FFC436',
+      secondary: '#000000',
+      tertiary: '#FFF0CE',
+      primaryHover: '#E6B031',
+      primaryActive: '#CC9D2B',
+      primaryDisabled: '#735818',
+      white: '#FFFFFF',
+      gray: '#8678787D',
     },
   },
   plugins: [],
-};
+} as Config;
 export default config;

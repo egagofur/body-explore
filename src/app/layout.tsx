@@ -1,9 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import '../styles/globals.css';
-import QueryProvider from '@/utils/providers/QueryProvider';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,9 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <QueryProvider>
-        <body className={inter.className}>{children}</body>
-      </QueryProvider>
+      <body className={'overflow-hidden bg-secondary'}>{children}</body>
     </html>
   );
 }
